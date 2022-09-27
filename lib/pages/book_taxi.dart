@@ -504,7 +504,7 @@ class _AddState extends State<Add> {
             'date': dateofJourney.text,
             'userId':userId,
           }).whenComplete(() {
-            Get.snackbar("Taxi Book", "Taxi book successfully",snackPosition: SnackPosition.BOTTOM);
+            Get.snackbar("Taxi Booking", "Taxi booking successfully",snackPosition: SnackPosition.BOTTOM);
             Navigator.of(context).pop();
           });
         }else{//update code
@@ -519,7 +519,7 @@ class _AddState extends State<Add> {
             'date': dateofJourney.text,
             'userId':userId
           }).whenComplete((){
-            Get.snackbar('Update Taxi Book', 'Update Taxi book succesfully',snackPosition: SnackPosition.BOTTOM);
+            Get.snackbar('Update Taxi Booking', 'Update Taxi booking succesfully',snackPosition: SnackPosition.BOTTOM);
             Navigator.of(context).pop();
           });
         }

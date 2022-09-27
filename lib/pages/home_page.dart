@@ -227,11 +227,11 @@ class _HomePageState extends State<HomePage> {
                                                   setState(() {
                                                     changebutton=true;
                                                   });
-                                                  await FirebaseFirestore.instance.collection("ticketbook").doc(
+                                                  await FirebaseFirestore.instance.collection("taxibook").doc(
                                                       data.id
                                                   ).delete().whenComplete(() {
                                                     Navigator.of(context).pop();
-                                                    Get.snackbar("Delete Ticket book", "Delete Ticket book successfully",snackPosition: SnackPosition.BOTTOM);
+                                                    Get.snackbar("Delete Taxi booking", "Delete Taxi booking successfully",snackPosition: SnackPosition.BOTTOM);
                                                   });
                                                   setState(() {
                                                     changebutton=false;
